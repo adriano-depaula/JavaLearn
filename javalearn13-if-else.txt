@@ -1,0 +1,201 @@
+Condicionais e Instruções If 
+----------------------------
+    Java suporta as condições lógicas usuais da matemática:
+
+        Menor que: a <b
+        Menor ou igual a: a <= b
+        Maior que: a> b
+        Maior ou igual a: a> = b
+        Igual a a == b
+        Diferente de: a! = B
+
+    Você pode usar essas condições para executar ações diferentes para decisões diferentes.
+
+    Java tem as seguintes instruções condicionais:
+
+        Use if para especificar um bloco de código a ser executado, se uma condição especificada for verdadeira
+
+        Use else para especificar um bloco de código a ser executado, se a mesma condição for falsa
+
+        Use else if para especificar uma nova condição para testar, se a primeira condição for falsa
+
+        Use a chave para especificar muitos blocos alternativos de código a serem executados
+
+    A declaração if
+    ---------------
+        Use a instrução if para especificar um bloco de código Java a ser executado se uma condição for verdadeira.
+
+            if (condition) {
+                // bloco de código a ser executado se a condição for verdadeira
+            }
+
+        Observe que se está em letras minúsculas. Letras maiúsculas (If ou IF) irão gerar um erro.
+
+        No exemplo abaixo, testamos dois valores para descobrir se 20 é maior que 18. Se a condição for verdadeira, imprima algum texto:
+
+            if (20 > 18) {
+            System.out.println("20 é maior que 18");
+            }
+
+            Também podemos testar variáveis:
+
+            int x = 20;
+            int y = 18;
+            if (x > y) {
+                System.out.println("x é maior que y");
+            }
+
+        Exemplo explicado
+        ------------------
+            No exemplo acima, usamos duas variáveis, x e y, para testar se x é maior que y (usando o operador >). Como x é 20 e y é 18, e sabemos que 20 é maior que 18, imprimimos na tela que "x é maior que y".
+
+
+    A declaração else
+    ------------------
+        Use a instrução else para especificar um bloco de código a ser executado se a condição for falsa.
+
+            if (condição) {
+                //bloco de código a ser executado se a condição for verdadeira
+            } else {
+                //bloco de código a ser executado se a condição for verdadeira
+            }
+
+            int time = 20;
+            if (time < 18) {
+                System.out.println("Dia bom.");
+            } else {
+                System.out.println("Boa noite.");
+            }
+            // Mostrará "Boa noite."
+
+    Exemplo explicado
+    ------------------
+        No exemplo acima, o tempo (20) é maior que 18, então a condição é falsa. Por causa disso, passamos para a condição else e imprimimos na tela "Boa noite". Se o tempo fosse inferior a 18, o programa imprimiria "Bom dia".
+
+    A declaração else if
+    ---------------------
+        Use a instrução else if para especificar uma nova condição se a primeira condição for falsa.
+
+            if (condition1) {
+                //bloco de código a ser executado se a condição 1 for verdadeira
+            } else if (condition2) {
+                //bloco de código a ser executado se a condição1 for falsa e a condição2 for verdadeira
+            } else {
+                //bloco de código a ser executado se a condição1 for falsa e a condição2 for falsa
+            }
+
+            int time = 22;
+            if (time < 10) {
+                System.out.println("Bom dia.");
+            } else if (time < 20) {
+                System.out.println("Bom dia.");
+            } else {
+                System.out.println("Boa noite.");
+            }
+            //Outputs "Boa noite."
+
+        Exemplo explicado
+        ------------------
+            No exemplo acima, o tempo (22) é maior que 10, então a primeira condição é falsa. A próxima condição, na instrução else if, também é falsa, então passamos para a condição else, uma vez que a condição1 e a condição2 são falsas - e imprimimos na tela "Boa noite".
+            No entanto, se o tempo fosse 14, nosso programa imprimiria "Bom dia".
+
+
+    Short Hand If ... Else (Operador ternário)
+    -------------------------------------------
+        Também existe um if else abreviado, conhecido como operador ternário porque consiste em três operandos. Ele pode ser usado para substituir várias linhas de código por uma única linha. Muitas vezes, é usado para substituir instruções if else simples:
+
+            variable = (condition) ? expressionTrue :  expressionFalse;
+
+            Em vez de escrever:
+
+                int time = 20;
+                if (time < 18) {
+                    System.out.println("Bom dia.");
+                } else {
+                    System.out.println("Boa noite.");
+                }
+
+            Você pode simplesmente escrever:
+
+                int time = 20;
+                String result = (time <18)? "Dia bom." : "Boa noite.";
+                System.out.println (resultado);
+
+    
+    Declarações de switch Java
+    ---------------------------
+        Use a instrução switch para selecionar um dos muitos blocos de código a serem executados.
+
+            switch(expression) {
+                case x:
+                    // code block
+                break;
+                case y:
+                    // code block
+                break;
+                default:
+                    // code block
+            }
+
+        É assim que funciona:
+        ----------------------
+            A expressão switch é avaliada uma vez.
+            O valor da expressão é comparado com os valores de cada caso.
+            Se houver uma correspondência, o bloco de código associado é executado.
+            As palavras-chave break e default são opcionais e serão descritas posteriormente neste capítulo
+            O exemplo abaixo usa o número do dia da semana para calcular o nome do dia da semana:
+
+                int day = 4;
+                switch (day) {
+                case 1:
+                    System.out.println("Segunda-feira");
+                    break;
+                case 2:
+                    System.out.println("Terça-feira");
+                    break;
+                case 3:
+                    System.out.println("Quarta-feira");
+                    break;
+                case 4:
+                    System.out.println("Quinta-feira");
+                    break;
+                case 5:
+                    System.out.println("Sexta-feira");
+                    break;
+                case 6:
+                    System.out.println("Sábado");
+                    break;
+                case 7:
+                    System.out.println("Domindo");
+                    break;
+                }
+                // Mostra "Quinta-feira" (dia 4)
+
+    A palavra-chave break
+    ----------------------
+        Quando o Java atinge uma palavra-chave break, ele sai do bloco switch.
+
+        Isso interromperá a execução de mais códigos e testes de caso dentro do bloco.
+
+        Quando uma correspondência é encontrada e o trabalho concluído, é hora de uma pausa. Não há necessidade de mais testes.
+
+        Uma pausa pode economizar muito tempo de execução porque "ignora" a execução de todo o resto do código no bloco de switch.
+
+        A palavra-chave padrão
+        -----------------------
+            A palavra-chave padrão especifica algum código a ser executado se não houver correspondência de maiúsculas e minúsculas:
+
+                int day = 4;
+                switch (day) {
+                case 6:
+                    System.out.println("Hoje é sábado");
+                    break;
+                case 7:
+                    System.out.println("Hoje é domingo");
+                    break;
+                default:
+                    System.out.println("Ansioso para o fim de semana");
+                }
+                //Resultados "Ansioso pelo fim de semana"
+
+            Observe que se a instrução padrão for usada como a última instrução em um bloco de switch, ela não precisa de uma pausa.

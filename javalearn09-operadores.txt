@@ -1,0 +1,133 @@
+Operadores Java
+----------------
+
+    Os operadores são usados para realizar operações em variáveis e valores.
+
+    No exemplo abaixo, usamos o operador + para somar dois valores:
+
+        int x = 100 + 50;
+
+    Embora o operador + seja frequentemente usado para somar dois valores, como no exemplo acima, ele também pode ser usado para somar uma variável e um valor, ou uma variável e outra variável:
+
+        int sum1 = 100 + 50;        // 150 (100 + 50)
+        int sum2 = sum1 + 250;      // 400 (150 + 250)
+        int sum3 = sum2 + sum2;     // 800 (400 + 400)
+
+    Java divide os operadores nos seguintes grupos:
+
+        - Operadores aritméticos
+        - Operadores de atribuição
+        - Operadores de comparação
+        - Operadores lógicos
+        - Operadores bit a bit
+
+
+Operadores aritméticos
+----------------------
+
+    Operadores aritméticos são usados para realizar operações matemáticas comuns.
+
+        | ----------------------------------------------------------------- |
+        | Operador |     Nome       |                 Descrição             |
+        | -------- | -------------- | ------------------------------------- |
+        |    +     | Adição         | Soma dois valores                     |
+        | -------- | -------------- | ------------------------------------- |
+        |    -     | Subtração      | Subtrai um valor de outro             |
+        | -------- | -------------- | ------------------------------------- |
+        |    *     | Multiplicação  | Multiplica dois valores               |
+        | -------- | -------------- | ------------------------------------- |
+        |    /     | Divisão        | Divide um valor por outro             |
+        | -------- | -------------- | ------------------------------------- |
+        |    %     | Módulo         | Retorna o resto da divisão            |
+        | -------- | -------------- | ------------------------------------- |
+        |    ++    | Incremento     | Aumenta o valor de uma variável em 1  |
+        | -------- | -------------- | ------------------------------------- |
+        |    --    | Decremento     | Diminui o valor de uma variável em 1  |
+        | -------- | -------------- | ------------------------------------- |
+
+
+Operadores de atribuição Java
+-----------------------------
+
+    Operadores de atribuição são usados para atribuir valores a variáveis.
+
+    No exemplo abaixo, usamos o operador de atribuição (=) para atribuir o valor 10 a uma variável chamada x:
+
+        int x = 10;
+
+    O operador de atribuição de adição (+ =) adiciona um valor a uma variável:
+
+        int x = 10;
+        x += 5;
+
+    Uma lista de todos os operadores de atribuição:
+
+        | --------------------------------------------------- |
+        | Operador |     Exemplo    |      É o mesmo que      |
+        | -------- | -------------- | ----------------------- |
+        |    =     |     x = 5      |       x = 5             |
+        | -------- | -------------- | ----------------------- |
+        |   +=     |     x += 3	    |       x = x + 3	      |
+        | -------- | -------------- | ----------------------- |
+        |   -=     |     x -= 3	    |       x = x - 3         |	
+        | -------- | -------------- | ----------------------- |
+        |   *=     |     x *= 3	    |       x = x * 3		  |
+        | -------- | -------------- | ----------------------- |
+        |   /=     |     x /= 3	    |       x = x / 3	      |	
+        | -------- | -------------- | ----------------------- |
+        |   %=     |     x %= 3	    |       x = x % 3	      |	
+        | -------- | -------------- | ----------------------- |
+        |   &=     |     x &= 3	    |       x = x & 3	      |
+        | -------- | -------------- | ----------------------- |
+        |   |=     |     x |= 3	    |       x = x | 3	      |
+        | -------- | -------------- | ----------------------- |
+        |   ^=     |     x ^= 3	    |       x = x ^ 3	      |
+        | -------- | -------------- | ----------------------- |
+        |   >>=    |    x >>= 3	    |       x = x >> 3        |
+        | -------- | -------------- | ----------------------- |
+        |  <<=     |    x <<= 3	    |       x = x << 3	      |
+        | -------- | -------------- | ----------------------- |
+
+
+Operadores de comparação Java
+------------------------------
+
+    Operadores de comparação são usados para comparar dois valores:
+
+        | ------------------------------------------------------ |
+        | Operador |           Nome          |      Exemplo      |
+        | -------- | ----------------------- | ----------------- |
+        |    ==    |   Igual a               |      x == y       |
+        | -------- | ----------------------- | ----------------- |
+        |    !=    |   Diferente             |      x != y	     |
+        | -------- | ----------------------- | ----------------- |
+        |    >     |   Maior que             |      x > y        |
+        | -------- | ----------------------- | ----------------- |
+        |    <     |   Menor que             |      x < y        |
+        | -------- | ----------------------- | ----------------- |
+        |    >=    |   Maior que ou igual a  |      x >= y	     |
+        | -------- | ----------------------- | ----------------- |
+        |    <=    |   Menos que ou igual a  |      x <= y	     |
+        | -------- | ----------------------- | ----------------- |
+
+
+Operadores lógicos Java
+-----------------------
+
+    Operadores lógicos são usados para determinar a lógica entre variáveis ou valores:
+
+        | ----------------------------------------------------------------------------------------------------- | ------------------ |
+        | Operador |           Nome          |           Descrição                                              |     Exemplo        |
+        | -------- | ----------------------- | ---------------------------------------------------------------- | ------------------ |
+        |    &&    | Lógico e                | Retorna verdadeiro se ambas as afirmações forem verdadeiras      | x < 5 &&  x < 10   |
+        | -------- | ----------------------- | ---------------------------------------------------------------- | ------------------ |
+        |    ||    | Lógico ou               | Retorna verdadeiro se uma das afirmações for verdadeira          | x < 5 || x < 4     |
+        | -------- | ----------------------- | ---------------------------------------------------------------- | ------------------ |
+        |    !     | Lógico não              | Reverte o resultado, retorna falso se o resultado for verdadeiro | !(x < 5 && x < 10) |
+        | ----------------------------------------------------------------------------------------------------- | ------------------ |
+
+Fonte: https://www.w3schools.com/java/java_operators.asp
+
+
+
+    

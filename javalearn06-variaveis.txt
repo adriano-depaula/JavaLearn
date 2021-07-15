@@ -1,0 +1,118 @@
+Variáveis Java
+===============
+Variáveis são containers que armazenam valores de dados.
+
+Em Java há quatros tipos diferentes de variáveis:
+    - String - Armazena texto, com "Olá mundo!!!". String tem seu valor cercado por aspa dupla.
+    - int - Armazena inteiros (números inteiro), como 123 ou -123
+    - float - Armazena pontos de números flutuante, com decimais como 19.99 or -19.99
+    - char Armazena um único caractere como 'a' ou 'B'. O tipo char tem seu valor cercado por aspa simples.
+    - boolean - Armazena valor com dois estados: verdadeiro e falso
+
+
+Declarando variáveis
+=====================
+Para criar uma variável, você deve especificar o tipo atribuido ao valor:
+
+Sintaxe:
+--------
+tipo variável = valor;
+
+Onde tipo é um dos tipos de dados Java (Como int ou String) e variável é o nome da variável (Como x ou nome). O sinal de igual é usado para atribuir valor para a variável.
+
+Para criar uma variável que armazena texto, veja o seguinte exemplo:
+--------------------------------------------------------------------
+String nome = "Adriano de Paula";
+System.out.println(nome);
+
+Para criar uma variável que armazena número, veja o seguinte exemplo:
+---------------------------------------------------------------------
+int meuNum = 15;
+System.out.println();
+
+Você pode também declarar uma variável sem atribuir um valor e atribuir o valor depois:
+---------------------------------------------------------------------------------------
+int meuNum;
+meuNum = 15;
+System.out.println(meuNum);
+
+Observe que se você atribuir um novo valor a uma variável existente, ele substituirá o valor anterior:
+------------------------------------------------------------------------------------------------------
+Mudando o valor de meuNum de 15 para 20:
+int meuNum = 15;
+meuNum = 20; // meuNum agora é 20
+System.out.println(meuNum);
+
+Variáveis Final
+================
+No entanto, você pode adicionar a palavra-chave "final" se não quiser que outro (ou você mesmo) substitua os valores existentes (isso declarará a variável como "final" ou "constante", o que significa imutável e somente leitura):
+
+final int meuNum = 15;
+meuNum = 20; // irá gerar um erro: não é possível atribuir um valor a uma variável final
+
+Outros tipos
+=============
+Uma demonstração de como declarar variáveis de outros tipos:
+------------------------------------------------------------
+int meuNum = 5;
+float meuFloatNum = 5.99f;
+char meuLetra = 'D';
+boolean meuBool = true;
+String meuTexto = "Olá mundo!!!";
+
+Exibindo Variáveis
+===================
+O método println() é frequentemente usado para exibir variáveis.
+
+Para combinar texto e variável, use o caractere +:
+--------------------------------------------------
+String nome = "Adriano de Paula";
+System.out.println("Olá" + nome);
+
+Você também pode usar o caractere + para adicionar uma variável a outra variável:
+---------------------------------------------------------------------------------
+String nome = "Adriano ";
+String sobrenome = "de Paula";
+String nomeCompleto = nome + sobrenome;
+System.out.println(nomeCompleto);
+
+Para valores numéricos, o caractere + funciona como um operador matemático (observe que usamos variáveis int (inteiras) aqui):
+------------------------------------------------------------------------------------------------------------------------------
+int x = 5;
+int y = 6;
+System.out.println(x + y); // Exibe o valor de x + y
+
+A partir do exemplo acima, você pode esperar:
+---------------------------------------------
+x armazena o valor 5
+y armazena o valor 6
+Então usamos o método println() para exibir o valor de x + y, que é 11
+
+Declarando muitas Variáveis
+============================
+Para declarar mais de uma variável do mesmo tipo, use uma lista separada por vírgulas:
+--------------------------------------------------------------------------------------
+int x = 5, y = 6, z = 50;
+System.out.println(x + y + z);
+
+Identificadores Java
+=====================
+Todas as variáveis Java devem ser identificadas com nomes exclusivos.
+Esses nomes exclusivos são chamados de identificadores.
+Os identificadores podem ser nomes curtos (como x e) ou nomes mais descritivos (idade, soma, volumeTotal).
+Observação: é recomendável usar nomes descritivos para criar um código compreensível e sustentável:
+
+//Bom
+int minutosPorHora = 60;
+
+// Ok, mas não é fácil para entender o que "m" é atualmente
+int m = 60;
+
+As regras gerais para construir nomes para variáveis (identificadores únicos) são:
+==================================================================================
+    - Os nomes podem conter letras, dígitos, sublinhados e cifrões
+    - Os nomes devem começar com uma letra
+    - Os nomes devem começar com uma letra minúscula e não pode conter espaços em branco
+    - Os nomes também podem começar com $ e _ (mas não os usaremos neste tutorial)
+    - Os nomes diferenciam maiúsculas de minúsculas ("minhaVar" e "minhavar" são variáveis diferentes)
+    - Palavras reservadas (como palavras-chave Java, como int ou boolean) não podem ser usadas como nomes

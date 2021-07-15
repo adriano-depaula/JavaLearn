@@ -1,0 +1,130 @@
+Strings Java
+-------------
+    Strings são usadas para armazenar texto.
+
+    Uma variável String contém uma coleção de caracteres entre aspas duplas:
+
+    Crie uma variável do tipo String e atribua a ela um valor:
+
+    Comprimento da String
+    ----------------------
+        Uma String em Java é na verdade um objeto que contém métodos que podem realizar certas operações em strings. Por exemplo, o comprimento de uma string pode ser encontrado com o método length():
+
+            String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            System.out.println("The length of the txt string is: " + txt.length());
+
+    Mais métodos de string
+    -----------------------
+        Existem muitos métodos de string disponíveis, por exemplo toUpperCase() e toLowerCase():
+
+            String txt = "Hello World";
+            System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+            System.out.println(txt.toLowerCase());   // Outputs "hello world"
+
+    Encontrar um Character em uma string
+    -------------------------------------
+        O método indexOf() retorna o índice (a posição) da primeira ocorrência de um texto especificado em uma string (incluindo espaços em branco):
+
+            String txt = "Please locate where 'locate' occurs!";
+            System.out.println(txt.indexOf("locate")); // Outputs 7
+
+        Nota: Java conta posições a partir de zero.
+        0 é a primeira posição em uma string, 1 é a segunda, 2 é a terceira ...
+
+    Concatenação de Strings
+    ------------------------
+        O operador + pode ser usado entre strings para combiná-los. Isso é chamado de concatenação:
+
+            String firstName = "John";
+            String lastName = "Doe";
+            System.out.println(firstName + " " + lastName);
+
+    Observe que adicionamos um texto vazio ("") para criar um espaço entre firstName e lastName na impressão.
+
+    Você também pode usar o método concat () para concatenar duas strings:
+
+        String firstName = "John ";
+        String lastName = "Doe";
+        System.out.println(firstName.concat(lastName));
+
+    Caracteres especiais
+    ---------------------
+        Como as strings devem ser escritas entre aspas, Java interpretará mal essa string e gerará um erro:
+
+            String txt = "We are the so-called "Vikings" from the north.";
+
+        A solução para evitar esse problema é usar o caractere de escape de barra invertida.
+
+        O caractere de escape de barra invertida (\) transforma caracteres especiais em string:
+
+        | ------------------------------------------------ |
+        | Escapa o caracter | Resultado | Descrição        |
+        | ------------------------------------------------ |
+        |        \'         |    '      | aspas simples    |
+        | ------------------------------------------------ |
+        |        \"         |    "      | aspas duplas     |
+        | ------------------------------------------------ |
+        |        \\         |    \      | Barra invertida  |
+        | ------------------------------------------------ |
+
+        A sequência \" insere aspas duplas em uma string:
+
+            String txt = "We are the so-called \"Vikings\" from the north.";
+
+        A sequência \' insere uma aspa simples em uma string:
+
+            String txt = "It\'s alright.";
+
+        A sequência \\ insere uma única barra invertida em uma string:
+
+            String txt = "The character \\ is called backslash.";
+
+        Seis outras sequências de escape são válidas em Java:
+
+            | ----------------------------------------- |
+            |     Código     |     Resultado            |
+            | ----------------------------------------- |
+            |       \n       |     Nova Linha           |
+            | ----------------------------------------- |
+            |       \r       |     Retorno de cursor    |
+            | ----------------------------------------- |
+            |       \t       |     Tab                  |
+            | ----------------------------------------- |
+            |       \b       |     Backspace            |
+            | ----------------------------------------- |
+            |       \f       |     Feed de formulário   |
+            | ----------------------------------------- |
+
+        Adicionando Números e Strings
+        ------------------------------
+            AVISO!
+
+                Java usa o operador + para adição e concatenação.
+
+                Números são adicionados. Strings são concatenados.
+
+        Se você adicionar dois números, o resultado será um número:
+
+            int x = 10;
+            int y = 20;
+            int z = x + y; // z will be 30 (an integer/number)
+
+        Se você adicionar duas strings, o resultado será uma concatenação de string:
+
+            String x = "10";
+            String y = "20";
+            String z = x + y;   // z will be 1020 (a String)
+
+        Se você adicionar um número e uma string, o resultado será uma concatenação de string:
+
+            String x = "10";
+            int y = 20;
+            String z = x + y;   // z will be 1020 (a String)
+
+        Referência de string completa
+        -----------------------------
+            Para uma referência completa dos métodos String, vá para nossa Referência de Métodos Java String.
+
+                https://www.w3schools.com/java/java_ref_string.asp
+
+            A referência contém descrições e exemplos de todos os métodos de string.

@@ -1,0 +1,26 @@
+Introdução ao JAVA
+
+O que é JAVA?
+==============
+JAVA é uma linguagem de programação popular, criada em 1995. É propriedade da Oracle, que é executada em mais de 3 bilhões de dispositivos.
+-------------------------------------------------------------------------------------------------------------------------------------------
+É usada por:
+-------------
+    - Aplicações Mobile ( Especialemte aplicativos Android)
+    - Aplicações Desktop
+    - Aplicações Web
+    - Servidores Web e Servidores de aplicações
+    - Jogos
+    - Conexões com banco de dados
+    - e muito mais....
+
+Por que usar JAVA?
+==================
+    - JAVA funciona em diferentes plataformas (Windows, Mac, Linux, Raspberry PI, etc.)
+    - É uma de muitas linguagens de programação popular.
+    - É fácil de usar e fácil de aprender
+    - É open-source e livre (free)
+    - É segura rápida e poderosa
+    - Tem um grande apoio da cominidade
+    - JAVA é uma linguagem de programação orientada a objeto
+    - Como JAVA é semelhante a C++ e C#, é fácil para os programadores mudarem para JAVA ou vice-versa

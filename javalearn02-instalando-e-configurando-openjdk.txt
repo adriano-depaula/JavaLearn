@@ -1,0 +1,39 @@
+1. Buscando no repositorio por java
+------------------------------------
+$ sudo dnf search openjdk
+$ sudo apt-cache search openjdk
+
+2. Instale aversão de sua necessidade
+--------------------------------------
+$ sudo dnf -y install java-1.8.0-openjdk
+$ sudo apt -y install openjdk-8-jdk openjdk-11-jdk
+
+4. Adicione as linha abaixo no arquivo ~/.bashrc
+-------------------------------------------------
+Fedora
+-------
+export JAVA_HOME="/usr/lib/jvm/jre-1.8.0-openjdk"
+
+Debian
+-------
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+
+
+5. Para quem tem mais de uma versão de Java intalado, defina o openjdk padrão
+------------------------------------------------------------------------------
+$ updates-alternatives --config java
+
+
+Instalando Java ArchLinux
+-------------------------
+$ sudo pacman -S jre11-openjdk-headless jre11-openjdk jdk11-openjdk openjdk11-doc openjdk11-src
+
+$ sudo pacman -S jre8-openjdk-headless jre8-openjdk jdk8-openjdk openjdk8-doc openjdk8-src
+
+archlinux-java status
+
+sudo archlinux-java set java-8-openjdk
+

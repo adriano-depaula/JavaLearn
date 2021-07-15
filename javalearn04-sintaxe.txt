@@ -1,0 +1,42 @@
+Sintaxe Java
+=============
+
+No capítulo anterior, criamos um arquivo Main.java e usamos o seguinte código que irá exibir na tela a mensagem "Olá mundo!!!".
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Olá mundo!!!")
+    }
+}
+
+Explicação do exemplo:
+----------------------
+
+Cada linha de código executada em Java deve estar dentro de uma classe. No nosso exemplo, nomeamos uma classe Main. A classe deve sempre começar com a primeira letra maiúscula.
+
+Nota: Java é case sensitive: "MinhaClasse" e "minhaclasse" tem significados diferentes.
+
+O nome do arquivo Java deve combinar com o nome da Classe. Quando salvar o arquivo, salve-o usando o mesmo nome da classe.
+
+O método main()
+================
+
+public static void main(String[] args)
+
+Qualquer código dentro do método main() será executado. Você não precisa entender as palavras-chave antes e depois do método main().
+
+Por enquanto, lembre-se de que todo programa Java tem um nome de classe que deve corresponder ao nome do arquivo e que todo programa deve conter o método mai().
+
+
+System.out.println("Olá mundo!!!");
+===================================
+Dentro do método main() podemos usar o método println() para imprimir a linha do texto na tela:
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Olá mundo!!!");
+    }
+}
+
+A as chaves marca o início e o fim de um bloco de código.
+Cada instrução de código deve terminar com um ponto e vírgula.

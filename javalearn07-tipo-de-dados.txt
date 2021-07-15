@@ -1,0 +1,166 @@
+Tipo de dados
+==============
+Conforme explicado no capítulo anterior, uma variável Java deve ser um tipo de dados especificado:
+
+    int meuNum = 5;               // Integer (whole number)
+    float meuFloatNum = 5.99f;    // Floating point number
+    char meuLetter = 'D';         // Character
+    boolean meuBool = true;       // Boolean
+    String meuText = "Hello";     // String
+
+
+Os tipos de dados são divididos em dois grupos:
+-----------------------------------------------
+    - Tipos de dados primitivos - inclui byte, short, int, long, float, double, boolean e char
+
+    - Tipos de dados não primitivos - such as String, Arrays and Classes (you will learn more about these in a later chapter)
+
+
+Tipos de dados primitivos
+-------------------------
+    Um tipo de dados primitivo especifica o tamanho e o tipo dos valores das variáveis e não possui métodos adicionais.
+
+    Existem oito tipos de dados primitivos em Java:
+    | ------------------------------------------------------------------------------------------------------------------- |
+    | Tipo de dados | Tamanho  | Description                                                                              |
+    | ------------------------------------------------------------------------------------------------------------------- |
+    | byte          | 1 byte   | Armazena números inteiros de -128 to 127                                                 |
+    | ------------- | -------- |----------------------------------------------------------------------------------------- |
+    | short         | 2 bytes  | Armazena números inteiros de -32,768 to 32,767                                           |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | int           | 4 bytes  | Armazena números inteiros de -2,147,483,648 to 2,147,483,647                             |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | long          | 8 bytes  | Armazena números inteiros de -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807     |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | float         | 4 bytes  | Armazena números fracionários. Suficiente para armazenar 6 a 7 dígitos decimais          |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | double        | 8 bytes  | Armazena números fracionários. Suficiente para armazenar 15 dígitos decimais             |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | boolean       | 1 bit    | Armazena valores verdadeiros ou falsos                                                   |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+    | char          | 2 bytes  | Armazena um único caractere/letra ou valores ASCII                                       |
+    | ------------- | -------- | ---------------------------------------------------------------------------------------- |
+
+
+Números
+-------
+    Os tipos de número primitivos são divididos em dois grupos:
+
+    Os tipos inteiros armazenam números inteiros, positivos ou negativos (como 123 ou -456), sem decimais. Os tipos válidos são byte, short, int e long. O tipo que você deve usar depende do valor numérico.
+
+    Os tipos de ponto flutuante representam números com uma parte fracionária, contendo um ou mais decimais. Existem dois tipos: float e double.
+
+    Embora existam muitos tipos numéricos em Java, os mais usados para números são int (para números inteiros) e double (para números de ponto flutuante). No entanto, iremos descrevê-los todos à medida que você continuar a ler.
+
+Tipos inteiros
+--------------
+    Byte
+    ----
+        O tipo de dados byte pode armazenar números inteiros de -128 a 127. Isso pode ser usado em vez de int ou outros tipos inteiros para economizar memória quando você tiver certeza de que o valor estará entre -128 e 127:
+
+            byte meuNum = 100;
+            System.out.println(meuNum);
+
+    Short
+    -----
+        O tipo de dados Short pode armazenar números inteiros de -32768 a 32767:
+
+    Int
+    ---
+        O tipo de dados int pode armazenar números inteiros de -2147483648 a 2147483647. Em geral, e em nosso tutorial, o tipo de dados int é o tipo de dados preferido quando criamos variáveis com um valor numérico.
+
+            int meuNum = 100000;
+            System.out.println(meuNum);
+
+    Long
+    ----
+        O tipo de dados long pode armazenar números inteiros de -9223372036854775808 a 9223372036854775807. Isso é usado quando int não é grande o suficiente para armazenar o valor. Observe que você deve terminar o valor com um "L":
+
+            long meuNum = 15000000000L;
+            System.out.println(meuNum);
+
+
+Tipos de ponto flutuante
+------------------------
+    Você deve usar um tipo de ponto flutuante sempre que precisar de um número com um decimal, como 9,99 ou 3,14515.
+
+
+    Float
+    ------
+        O tipo de dados float pode armazenar números fracionários de 3.4e − 038 a 3.4e + 038. Observe que você deve terminar o valor com um "f":
+
+            float meuNum = 5.75f;
+            System.out.println(meuNum);
+
+    Double
+    ------
+        O tipo de dados double pode armazenar números fracionários de 1,7e − 308 a 1,7e + 308. Observe que você deve terminar o valor com um "d":
+
+            double meuNum = 19.99d;
+            System.out.println(meuNum);
+
+    Usar float ou double?
+    ---------------------
+        A precisão de um valor de ponto flutuante indica quantos dígitos o valor pode ter após o ponto decimal. A precisão do float é de apenas seis ou sete dígitos decimais, enquanto as variáveis double têm uma precisão de cerca de 15 dígitos. Portanto, é mais seguro usar o double para a maioria dos cálculos.
+
+    Números Científicos
+    -------------------
+        Um número de ponto flutuante também pode ser um número científico com um "e" para indicar a potência de 10:
+
+            float f1 = 35e3f;
+            double d1 = 12E4d;
+            System.out.println(f1);
+            System.out.println(d1);
+
+    Booleans
+    ---------
+        Um tipo de dados booleano é declarado com a palavra-chave booleana e só pode assumir os valores verdadeiro ou falso:
+
+            boolean isJavaFun = true;
+            boolean isFishTasty = false;
+            System.out.println(isJavaFun);     // Outputs true
+            System.out.println(isFishTasty);   // Outputs false
+
+    Os valores booleanos são usados principalmente para testes condicionais, sobre os quais você aprenderá mais em um capítulo posterior.
+
+    Characters
+    ----------
+        O tipo de dados char é usado para armazenar um único caractere. O caractere deve estar entre aspas simples, como 'A' ou 'c':
+            char meuGrade = 'B';
+            System.out.println(meuGrade);
+
+        Como alternativa, você pode usar valores ASCII para exibir certos caracteres:
+
+            char a = 65, b = 66, c = 67;
+            System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+
+    Strings
+    -------
+        O tipo de dados String é usado para armazenar uma sequência de caracteres (texto). Os valores da string devem ser colocados entre aspas duplas:
+
+            String greeting = "Hello World";
+            System.out.println(greeting);
+
+        O tipo String é tão usado e integrado em Java que alguns o chamam de "o nono tipo especial".
+
+       Uma String Java é, na verdade, um tipo de dados não primitivo, porque se refere a um objeto. O objeto String tem métodos que são usados para realizar certas operações em strings. Não se preocupe se você ainda não entendeu o termo "objeto". Aprenderemos mais sobre strings e objetos em um capítulo posterior. 
+
+Tipos de dados não primitivos
+-----------------------------
+    Os tipos de dados não primitivos são chamados de tipos de referência porque se referem a objetos.
+
+    A principal diferença entre os tipos de dados primitivos e não primitivos são:
+
+        - Os tipos primitivos são predefinidos (já definidos) em Java. Tipos não primitivos são criados pelo programador e não são definidos por Java (exceto para String).
+
+        - Tipos não primitivos podem ser usados para chamar métodos para realizar certas operações, enquanto tipos primitivos não podem.
+
+        - Um tipo primitivo sempre tem um valor, enquanto os tipos não primitivos podem ser nulos.
+
+        - Um tipo primitivo começa com uma letra minúscula, enquanto os tipos não primitivos começam com uma letra maiúscula.
+
+        - O tamanho de um tipo primitivo depende do tipo de dados, enquanto os tipos não primitivos têm todos o mesmo tamanho.
+
+    

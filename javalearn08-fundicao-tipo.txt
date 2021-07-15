@@ -1,0 +1,39 @@
+Casting de Tipo JAVA
+----------------------
+    A conversão de tipo ocorre quando você atribui um valor de um tipo de dados primitivo a outro tipo.
+
+        - Em Java, existem dois tipos de Casting:
+        
+            byte -> short -> char -> int -> long -> float -> double
+
+        - Ampliando o Casting (automaticamente) - convertendo um tipo menor em um tamanho maior
+        
+            double -> float -> long -> int -> char -> short -> byte
+
+    Ampliando o Casting
+    -------------------
+        A ampliação da moldagem é feita automaticamente ao passar um tipo de tamanho menor para um tipo de tamanho maior:
+
+        public class Main {
+            public static void main(String[] args) {
+                int meuInt = 9;
+                double meuDouble = meuInt; // Automatic casting: int to double
+
+                System.out.println(meuInt);      // Outputs 9
+                System.out.println(meuDouble);   // Outputs 9.0
+            }
+        }
+        
+
+    Estreitando Casting
+    -------------------
+        O estreitamento Casting deve ser feito manualmente, colocando o tipo entre parênteses na frente do valor:
+            public class Main {
+            public static void main(String[] args) {
+                double meuDouble = 9.78d;
+                int meuInt = (int) meuDouble; // Manual casting: double to int
+
+                System.out.println(meuDouble);   // Outputs 9.78
+                System.out.println(meuInt);      // Outputs 9
+            }
+        }

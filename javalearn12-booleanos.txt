@@ -1,0 +1,47 @@
+Booleanos
+----------
+    Muitas vezes, na programação, você precisará de um tipo de dados que pode ter apenas um de dois valores, como:
+
+        YES / NO
+        ON / OFF
+        TRUE / FALSE
+
+    Para isso, o Java possui um tipo de dado booleano, que pode assumir os valores verdadeiro ou falso.
+
+    Valores Booleanos
+    ------------------
+        Um tipo booleano é declarado com a palavra-chave booleana e só pode assumir os valores verdadeiro ou falso:
+
+            boolean isJavaFun = true;
+            boolean isFishTasty = false;
+            System.out.println(isJavaFun);     // Outputs true
+            System.out.println(isFishTasty);   // Outputs false
+
+        No entanto, é mais comum retornar valores booleanos de expressões booleanas, para teste condicional (veja abaixo).
+
+    Expressão Booleana
+    -------------------
+        Uma expressão booleana é uma expressão Java que retorna um valor booleano: verdadeiro ou falso.
+
+        Você pode usar um operador de comparação, como o operador maior que (>) para descobrir se uma expressão (ou variável) é verdadeira:
+
+            int x = 10;
+            int y = 9;
+            System.out.println(x > y); // returns true, because 10 is higher than 9
+
+        Ou ainda mais fácil:
+
+            System.out.println(10 > 9); // returns true, because 10 is higher than 9
+
+            Nos exemplos abaixo, usamos o operador igual a (==) para avaliar uma expressão:
+
+                int x = 10;
+                System.out.println(x == 10); // returns true, because the value of x is equal to 10
+
+                System.out.println(10 == 15); // returns false, because 10 is not equal to 15
+
+            O valor booleano de uma expressão é a base para todas as comparações e condições Java.
+
+            Você aprenderá mais sobre as condições no próximo capítulo.
+
+            
