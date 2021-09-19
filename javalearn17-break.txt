@@ -1,0 +1,59 @@
+Declaração Java Break e Continue
+---------------------------------
+
+    Break
+    ------
+        Você já viu a instrução break usada em um capítulo anterior deste tutorial. Foi usado para "saltar" de uma instrução switch.
+
+        A instrução break também pode ser usada para sair de um loop.
+
+        Este exemplo interrompe o loop quando i é igual a 4:
+
+            for (int i = 0; i < 10; i++) {
+                if (i == 4) {
+                    break;
+                }
+                System.out.println(i);
+            }
+
+        
+    Continue
+    ---------
+        A instrução continue interrompe uma iteração (no loop), se uma condição especificada ocorrer, e continua com a próxima iteração no loop.
+
+        Este exemplo pula o valor de 4:
+
+            for (int i = 0; i < 10; i++) {
+                if (i == 4) {
+                    continue;
+                }
+                System.out.println(i);
+            }
+
+    
+    Break e Continue num Loop While
+    --------------------------------
+
+        Você também pode usar break e continue in while loops:
+
+            int i = 0;
+            while (i < 10) {
+                System.out.println(i);
+                i++;
+                if (i == 4) {
+                    break;
+                }
+            }
+
+
+    Exemplo Continue
+    -----------------
+        int i = 0;
+        while (i < 10) {
+            if (i == 4) {
+                i++;
+                continue;
+            }
+            System.out.println(i);
+            i++;
+        }

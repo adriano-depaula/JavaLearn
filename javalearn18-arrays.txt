@@ -1,0 +1,107 @@
+Declaração Java Array
+----------------------
+    As matrizes são usadas para armazenar vários valores em uma única variável, em vez de declarar variáveis separadas para cada valor.
+
+    Para declarar uma matriz, defina o tipo de variável com colchetes:
+
+        String[] cars;
+
+    Agora declaramos uma variável que contém um array de strings. Para inserir valores nele, podemos usar um literal de matriz - coloque os valores em uma lista separada por vírgulas, entre chaves:
+
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+
+    Para criar uma matriz de inteiros, você pode escrever:
+
+        int[] myNum = {10, 20, 30, 40};
+
+    
+    Acesse os elementos de um array
+    --------------------------------
+        Você acessa um elemento da matriz referindo-se ao número do índice.
+
+        Esta declaração acessa o valor do primeiro elemento em carros:
+
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            System.out.println(cars[0]);
+            // Outputs Volvo
+
+        Nota: Os índices de matriz começam com 0: [0] é o primeiro elemento. [1] é o segundo elemento, etc.
+
+
+        Alterar um elemento Array
+        --------------------------
+            Para alterar o valor de um elemento específico, consulte o número do índice:
+
+                cars[0] = "Opel";
+
+                String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+                cars[0] = "Opel";
+                System.out.println(cars[0]);
+                // Now outputs Opel instead of Volvo
+
+
+        Array Length
+        --------------
+            Para descobrir quantos elementos uma matriz possui, use a propriedade length:
+
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            System.out.println(cars.length);
+            // Outputs 4
+
+        
+        Loop por meio de um Array
+        --------------------------
+            Você pode percorrer os elementos de um Array com o loop for e usar a propriedade length para especificar quantas vezes o loop deve ser executado.
+            O exemplo a seguir gera todos os elementos do Array carros:
+
+                String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+                for (int i = 0; i < cars.length; i++) {
+                    System.out.println(cars[i]);
+                }
+
+
+        Faça um loop em um Array com For-Each
+        --------------------------------------
+            Também existe um loop "for-each", que é usado exclusivamente para percorrer elementos em um Array:
+
+                for (type variable : arrayname) {
+                    ...
+                }
+        
+        O exemplo a seguir produz todos os elementos no Array carros, usando um loop "for-each":
+
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            for (String i : cars) {
+                System.out.println(i);
+            }
+
+        O exemplo acima pode ser lido assim: para cada elemento String (chamado i - como no índice) em carros, imprima o valor de i.
+        Se você comparar o loop for e o loop for-each, verá que o método for-each é mais fácil de escrever, não requer um contador (usando a propriedade length) e é mais legível.
+
+
+        Array multidimensionais
+        -------------------------
+            Um array multidimensional é um array de arrays.
+            Para criar um Array bidimensional, adicione cada Array dentro de seu próprio conjunto de chaves:
+
+            int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+
+            myNumbers é agora um array com dois arrays como seus elementos.
+            Para acessar os elementos da matriz myNumbers, especifique dois índices: um para a matriz e um para o elemento dentro dessa matriz. Este exemplo acessa o terceiro elemento (2) na segunda matriz (1) de myNumbers:
+
+            int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+            int x = myNumbers[1][2];
+            System.out.println(x); // Outputs 7
+
+            Também podemos usar um loop for dentro de outro loop for para obter os elementos de um Array bidimensional (ainda temos que apontar para os dois índices):
+
+                public class Main {
+                    public static void main(String[] args) {
+                        int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };
+                        for (int i = 0; i < myNumbers.length; ++i) {
+                            for(int j = 0; j < myNumbers[i].length; ++j) {
+                                System.out.println(myNumbers[i][j]);
+                            }
+                        }
+                    }
+                }

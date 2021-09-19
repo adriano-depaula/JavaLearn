@@ -1,0 +1,52 @@
+Declaração For Loop
+--------------------
+    Quando você souber exatamente quantas vezes deseja percorrer um bloco de código, use o loop for em vez de um loop while:
+
+        for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+        }
+
+    A instrução 1 é executada (uma vez) antes da execução do bloco de código.
+
+    A instrução 2 define a condição para a execução do bloco de código.
+
+    A instrução 3 é executada (todas as vezes) após a execução do bloco de código.
+
+    O exemplo abaixo imprimirá os números de 0 a 4:
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+
+    Exemplo explicado
+    -----------------
+        A instrução 1 define uma variável antes do início do loop (int i = 0).
+
+        A instrução 2 define a condição para o loop ser executado (i deve ser menor que 5). Se a condição for verdadeira, o loop começará novamente; se for falso, o loop terminará.
+
+        A instrução 3 aumenta um valor (i ++) cada vez que o bloco de código no loop é executado.
+
+    Outro exemplo
+    --------------
+        Este exemplo imprimirá apenas valores pares entre 0 e 10:
+
+            for (int i = 0; i <= 10; i = i + 2) {
+                System.out.println(i);
+            }
+        
+    Loop For-Each
+    --------------
+        Também existe um loop "for-each", que é usado exclusivamente para percorrer os elementos em um array:
+
+            for (type variableName : arrayName) {
+                // code block to be executed
+            }
+
+        O exemplo a seguir produz todos os elementos na array carros, usando um loop "for-each":
+
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            for (String i : cars) {
+                System.out.println(i);
+            }
+
+        Nota: Não se preocupe se você não entender o exemplo acima. Você aprenderá mais sobre Arrays no capítulo Arrays Java.

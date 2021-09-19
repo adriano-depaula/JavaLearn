@@ -1,0 +1,78 @@
+Declaração Java Switch
+-----------------------
+    Use a instrução switch para selecionar um dos muitos blocos de código a serem executados.
+
+    switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+
+
+    É assim que funciona:
+    ---------------------
+        - A expressão switch é avaliada uma vez.
+        - O valor da expressão é comparado com os valores de cada caso.
+        - Se houver uma correspondência, o bloco de código associado é executado.
+        - As palavras-chave break e default são opcionais e serão descritas posteriormente neste capítulo
+
+    O exemplo abaixo usa o número do dia da semana para calcular o nome do dia da semana:
+
+    int day = 4;
+    switch (day) {
+        case 1:
+            System.out.println("Monday");
+            break;
+        case 2:
+            System.out.println("Tuesday");
+            break;
+        case 3:
+            System.out.println("Wednesday");
+            break;
+        case 4:
+            System.out.println("Thursday");
+            break;
+        case 5:
+            System.out.println("Friday");
+            break;
+        case 6:
+            System.out.println("Saturday");
+            break;
+        case 7:
+            System.out.println("Sunday");
+            break;
+    }
+    // Saída "Thursday" (day 4)
+
+
+    A palavra-chave break
+    ---------------------
+        Quando o Java atinge uma palavra-chave break, ele sai do bloco switch.
+        Isso interromperá a execução dos demais códigos e testes de caso dentro do bloco.
+        Quando uma correspondência é encontrada e o trabalho concluído, é hora de uma pausa. Não há necessidade de mais testes.
+
+        Uma pausa pode economizar muito tempo de execução porque "ignora" a execução de todo o resto do código no bloco de switch.
+
+
+    A palavra-chave default
+    ------------------------
+        A palavra-chave default especifica algum código a ser executado se não houver correspondência de maiúsculas e minúsculas:
+
+            int day = 4;
+            switch (day) {
+            case 6:
+                System.out.println("Today is Saturday");
+                break;
+            case 7:
+                System.out.println("Today is Sunday");
+                break;
+            default:
+                System.out.println("Looking forward to the Weekend");
+            }
+            // Outputs "Looking forward to the Weekend"
+
+        Observe que se a instrução default for usada como a última instrução em um bloco de switch, ela não precisa de uma pausa.
