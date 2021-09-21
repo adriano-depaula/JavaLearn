@@ -4,6 +4,7 @@ O que é JAVA?
 ==============
 JAVA é uma linguagem de programação popular, criada em 1995. É propriedade da Oracle, que é executada em mais de 3 bilhões de dispositivos.
 -------------------------------------------------------------------------------------------------------------------------------------------
+
 É usada por:
 -------------
     - Aplicações Mobile ( Especialemte aplicativos Android)

@@ -22,7 +22,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 
 
-5. Para quem tem mais de uma versão de Java intalado, defina o openjdk padrão
+5. Para quem tem mais de uma versão de Java instalado, defina o openjdk padrão
 ------------------------------------------------------------------------------
 $ updates-alternatives --config java
 

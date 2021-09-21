@@ -9,6 +9,6 @@ public class Main {
         // Declarando variável inteira
         double minhaIdade = idade;
         // Essa linha irá exibir a o texto entre aspas
-        System.out.println("Seu nome é " + nomeCompleto + " e você tem " + minhaIdade);
+        System.out.println("O nome " + nomeCompleto + " tem " + nomeCompleto.length() + " caracteres " + "e " + minhaIdade + " anos de idade");
     }
 }

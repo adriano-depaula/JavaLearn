@@ -1,14 +1,14 @@
 Comentários Java
-=================
-Os comentários podem ser usados para explicar o código Java e torná-lo mais legível. Também pode ser usado para evitar a execução ao testar código alternativo.
+-----------------
+    Os comentários podem ser usados para explicar o código Java e torná-lo mais legível. Também pode ser usado para evitar a execução ao testar código alternativo.
 
 Comentários de linha única
 --------------------------
-Comentário de uma linha começa com duas barras inclinada para frente (//). Qualquer texto que estiver na frente das duas barras é ignorado pelo Java (não será executado).
-Este exemplo usa comentário de uma linha antes da linha de código.
+    Comentário de uma linha começa com duas barras inclinada para frente (//). Qualquer texto que estiver na frente das duas barras é ignorado pelo Java (não será executado).
+    Este exemplo usa comentário de uma linha antes da linha de código.
 
-// Este é um comentário
-System.out.println("Olá mundo!!!");
+    // Este é um comentário
+    System.out.println("Olá mundo!!!");
 
 Este exemplo usa comentário de uma linha no final da linha de código.
 

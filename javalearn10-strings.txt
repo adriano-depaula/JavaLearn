@@ -128,3 +128,5 @@ Strings Java
                 https://www.w3schools.com/java/java_ref_string.asp
 
             A referência contém descrições e exemplos de todos os métodos de string.
+
+            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

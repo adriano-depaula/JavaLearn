@@ -13,7 +13,7 @@ Os tipos de dados são divididos em dois grupos:
 -----------------------------------------------
     - Tipos de dados primitivos - inclui byte, short, int, long, float, double, boolean e char
 
-    - Tipos de dados não primitivos - such as String, Arrays and Classes (you will learn more about these in a later chapter)
+    - Tipos de dados não primitivos - como String, Arrays e Classes (você aprenderá mais sobre eles em um capítulo posterior)
 
 
 Tipos de dados primitivos
@@ -24,11 +24,11 @@ Tipos de dados primitivos
     | ------------------------------------------------------------------------------------------------------------------- |
     | Tipo de dados | Tamanho  | Description                                                                              |
     | ------------------------------------------------------------------------------------------------------------------- |
-    | byte          | 1 byte   | Armazena números inteiros de -128 to 127                                                 |
+    | byte          | 1 byte   | Armazena números inteiros de -128 à 127                                                 |
     | ------------- | -------- |----------------------------------------------------------------------------------------- |
-    | short         | 2 bytes  | Armazena números inteiros de -32,768 to 32,767                                           |
+    | short         | 2 bytes  | Armazena números inteiros de -32,768 à 32,767                                           |
     | ------------- | -------- | ---------------------------------------------------------------------------------------- |
-    | int           | 4 bytes  | Armazena números inteiros de -2,147,483,648 to 2,147,483,647                             |
+    | int           | 4 bytes  | Armazena números inteiros de -2,147,483,648 à 2,147,483,647                             |
     | ------------- | -------- | ---------------------------------------------------------------------------------------- |
     | long          | 8 bytes  | Armazena números inteiros de -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807     |
     | ------------- | -------- | ---------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ Números
 
     Os tipos de ponto flutuante representam números com uma parte fracionária, contendo um ou mais decimais. Existem dois tipos: float e double.
 
-    Embora existam muitos tipos numéricos em Java, os mais usados para números são int (para números inteiros) e double (para números de ponto flutuante). No entanto, iremos descrevê-los todos à medida que você continuar a ler.
+    Embora existam muitos tipos numéricos em Java, os mais usados para números são int (para números inteiros) e double (para números de ponto flutuante). No entanto, iremos descrevê-los todos à medida que você continuar lendo.
 
 Tipos inteiros
 --------------
@@ -67,7 +67,7 @@ Tipos inteiros
 
     Int
     ---
-        O tipo de dados int pode armazenar números inteiros de -2147483648 a 2147483647. Em geral, e em nosso tutorial, o tipo de dados int é o tipo de dados preferido quando criamos variáveis com um valor numérico.
+        O tipo de dados int pode armazenar números inteiros de -2.147.483.648 a 2.147.483.647. Em geral, e em nosso tutorial, o tipo de dados int é o tipo de dados preferido quando criamos variáveis com um valor numérico.
 
             int meuNum = 100000;
             System.out.println(meuNum);

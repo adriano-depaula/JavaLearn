@@ -1,23 +1,23 @@
 Início rápido
-==============
-Em Java cada aplicação começa com nome de uma classe, cada classe deve combinar com nome do arquivo.
-Vamos criar nosso primeiro arquivo em Java chamado Main.java, que pode ser feito com qualquer editor de texto.
-O arquivo deve conter uma mesagem "Olá mundo!!!" que é escrito com o seguinte código:
+----------------
+    Em Java cada aplicação começa com nome de uma classe, cada classe deve combinar com nome do arquivo.
+    Vamos criar nosso primeiro arquivo em Java chamado Main.java, que pode ser feito com qualquer editor de texto.
+    O arquivo deve conter uma mesagem "Olá mundo!!!" que é escrito com o seguinte código:
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Olá mundo!!!");
-    }
-}
+        public class Main {
+            public static void main(String[] args) {
+                System.out.println("Olá mundo!!!");
+            }
+        }
 
-Salve o arquivo Main.java
+    Salve o arquivo Main.java
 
-Abra o caminho do arquivo em um terminal e execute:
+    Abra o caminho do arquivo em um terminal e execute:
 
-$ javac Main.java
+        $ javac Main.java
 
-Isso irá compilar seu código. Se não houver erros no código, o prompt de comando o levará para a próxima linha. Agora digite "java Main" para executar o arquivo
+    Isso irá compilar seu código. Se não houver erros no código, o prompt de comando o levará para a próxima linha. Agora digite "java Main" para executar o arquivo
 
-$ java Main
+        $ java Main
 
-A saída será a string "Olá mundo!!!" sem as aspas dupla.
+    A saída será a string "Olá mundo!!!" sem as aspas dupla.

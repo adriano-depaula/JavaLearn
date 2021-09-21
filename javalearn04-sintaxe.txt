@@ -25,7 +25,7 @@ public static void main(String[] args)
 
 Qualquer código dentro do método main() será executado. Você não precisa entender as palavras-chave antes e depois do método main().
 
-Por enquanto, lembre-se de que todo programa Java tem um nome de classe que deve corresponder ao nome do arquivo e que todo programa deve conter o método mai().
+Por enquanto, lembre-se de que todo programa Java tem um nome de classe que deve corresponder ao nome do arquivo e que todo programa deve conter o método main().
 
 
 System.out.println("Olá mundo!!!");
