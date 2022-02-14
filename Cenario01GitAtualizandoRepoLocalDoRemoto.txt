@@ -1,0 +1,47 @@
+Entre no repositório local
+---------------------------
+    $ cd /home/administrador/repository/java/eclipse-workspace
+
+Crie o usuário do repositorio local
+------------------------------------
+    $ git config --global user.name "Adriano de Paula"
+
+Vincule um conta de email para o usuario local
+-----------------------------------------------
+    $ git config --global user.email adriano-depaula@github.com
+
+Configure um editor de texto para trabalhar com git
+----------------------------------------------------
+    $ git config --global core.editor "code"
+
+Liste as configurações do git
+------------------------------
+    $ git config --list
+
+Veja se foi configurado com o editor especificado no comando
+-------------------------------------------------------------
+    $ git config --global -e
+
+Crie o repositório para começar a rastrear seus arquivos
+---------------------------------------------------------
+    $ git init
+
+Adicione os arquivos na área de espera
+----------------------------------------
+    $ git add .
+
+Tire os arquivos da área de espera
+-----------------------------------
+    $ git commit -m "JAVA Conceitos Código Básico"
+
+    $ git remote add https://github.com/adriano-depaula/JavaLearn.git
+
+    $ git pull origin
+
+Renomeie a branch master para main
+-----------------------------------
+    $ git branch -m master main
+
+    $ git push origin main
+
+    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
