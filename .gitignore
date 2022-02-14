@@ -1,0 +1,7 @@
+.*
+!.gitignore
+Basico/.*
+Basico/bin
+conceitosBasicos/
+conceitosBasicosGUI/
+LAB/
