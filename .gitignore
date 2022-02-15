@@ -1,4 +1,4 @@
 .*
 !.gitignore
 Basico/.*
-Basico/bin
+*/bin/
