@@ -44,4 +44,12 @@ Renomeie a branch master para main
 
     $ git push origin main
 
-    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
+Cria um branch e já muda pra ela
+---------------------------------
+    $ git checkout -b novaBranch
+    
+Reverte merge
+---------------
+    $ git reset --hard HEAD
+
+    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
