@@ -27,7 +27,7 @@ class Pessoal {
 }
 
 
-public class Java24_metodoCOntrutor {
+public class Java24_metodoConstrutor {
 
 	public static void main(String[] args) {
 		
