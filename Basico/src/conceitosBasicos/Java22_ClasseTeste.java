@@ -3,7 +3,6 @@ package conceitosBasicos;
 class Pessoa {
 	
 	String nome;
-	
 	int idade;
 	
 	public void diz() {
