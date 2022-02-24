@@ -52,4 +52,4 @@ Reverte merge
 ---------------
     $ git reset --hard HEAD
 
-    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
+    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

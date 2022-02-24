@@ -1,6 +1,6 @@
 package conceitosBasicos;
 
-public class java06_operadorAritmetico {
+public class Java06_operadorAritmetico {
 	
 	public static int add(int a1, int b1) {
 		
