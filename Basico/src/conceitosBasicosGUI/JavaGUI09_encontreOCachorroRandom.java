@@ -1,38 +1,44 @@
 package conceitosBasicosGUI;
 import java.awt.GridLayout;
 import java.awt.event.*;
+import java.util.Random;
 import javax.swing.*;
 
-
-
-
-
-public class JavaGUI08_jogoEncontreCachorro {
+public class JavaGUI09_encontreOCachorroRandom {
 
 	public static void main(String[] args) {
 		
-
 		JFrame janela = new JFrame("Aplicação Gráfica JAVA");
 		
-		int[][] matriz = {
+		final int[][] maps = {
 				
-				{1, 1, 1, 1},
-				{1, 1, 1, 1},
-				{1, 2, 1, 1},
-				{1, 1, 1, 1}
+				{0, 0, 0, 0},
+				{0, 0, 0, 0},
+				{0, 0, 0, 0},
+				{0, 0, 0, 0}
+				
 		};
+		
+		Random randomico = new Random();
+		
+		for(int i = 0; i < maps.length; i++) {
+			
+			for(int c = 0; c < maps[i].length; c++) {
+				
+				maps[i][c] = randomico.nextInt(2) + 1;
+			}
+		}
 		
 		janela.setLayout(new GridLayout(4,4));
 		
-		for(int i = 0; i < matriz.length; i++) {
+		for(int i = 0; i < maps.length; i++) {
 			
-			for(int c = 0; c < matriz[i].length; c++) {
+			for(int c = 0; c < maps[i].length; c++) {
 				
 				final JButton botao = new JButton();
-				
-				botao.setName(Integer.toString(matriz[i][c]));
-				
+				botao.setName(Integer.toString(maps[i][c]));
 				janela.add(botao);
+				
 				botao.addActionListener(new ActionListener() {
 					
 					@Override
@@ -46,16 +52,17 @@ public class JavaGUI08_jogoEncontreCachorro {
 						}else if(botao.getName().equals("2")) {
 							
 							botao.setText("Dog");
-							
 						}
 					}
 					
 				});
+				
 			}
 			
-			janela.setSize(250,250);
-			janela.setVisible(true);
 		}
+		
+		janela.setSize(250,250);
+		janela.setVisible(true);
 
 	}
 

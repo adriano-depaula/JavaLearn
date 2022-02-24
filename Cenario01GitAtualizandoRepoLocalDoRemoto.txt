@@ -34,14 +34,36 @@ Tire os arquivos da área de espera
 -----------------------------------
     $ git commit -m "JAVA Conceitos Código Básico"
 
-    $ git remote add https://github.com/adriano-depaula/JavaLearn.git
+Verifique se existe um repositorio remoto
+------------------------------------------
+    $ git remote -v
 
-    $ git pull origin
+Se necessário adicione um repositório remoto
+---------------------------------------------
+    $ git remote add origin https://github.com/adriano-depaula/JavaLearn.git
 
 Renomeie a branch master para main
 -----------------------------------
     $ git branch -m master main
 
+Atuaalize o repositório remoto com o local
+-------------------------------------------
+    $ git pull origin
+
+Verificando o status da área de espera
+---------------------------------------
+    $ git status
+
+Se houver mudanças adicione a área de espera
+---------------------------------------------
+    $ git add .
+
+Prepare as mudanças fazendo um commit para fazer um push (enviar) para o repositório remoto
+--------------------------------------------------------------------------------------------
+    $ git commit -m "Mudanças - Alterado o arquivo Cenario01GitAtualizandoRepoLocalDoRemoto.txt"
+
+Enviando as mudanças para o repositório remoto
+-----------------------------------------------
     $ git push origin main
 
 Cria um branch e já muda pra ela
