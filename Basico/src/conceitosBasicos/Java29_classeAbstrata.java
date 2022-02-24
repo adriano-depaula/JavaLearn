@@ -36,7 +36,7 @@ public class Java29_classeAbstrata {
 
 	public static void main(String[] args) {
 		Filho classeFilho = new Filho("Luke");
-		classeFilho.comprar("Frutas");
+		classeFilho.comprar("de Frutas");
 		System.out.println("Pai, eu comprei uma libra " + classeFilho.getFrutas());
 	}
 
